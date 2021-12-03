@@ -18,7 +18,7 @@
             <div class="mov">
                 <a href="page1.html" target="_self" class="boxti">
                 <div id="box2" class="box"></div></a>
-                <a href="index.html" target="_self" class="navti">PAGE 1</a>
+                <a href="page1.html" target="_self" class="navti">PAGE 1</a>
             </div>
             <div class="mov">
                 <a href="page2.html" target="_self" class="boxti">
@@ -38,7 +38,64 @@
         </nav>
     </header>
     <section>
-        <div class="img"><img src="bill.jpg" width="300" height="220"></div>
+        <h1>CATCH THE FLY</h1>
+        <div id="area">
+            <div id="box" >
+           <img src="fly.png" id="fly">
+            </div>
+        </div>
+
+    </section>
+    <script>
+        document.getElementById("box").addEventListener("mouseover", () => {
+            document.getElementById("box").style.top = Math.floor(Math.random() * 100) + 1 + "%";
+            document.getElementById("box").style.left = Math.floor(Math.random() * 100) + 1 + "%";
+            document.getElementById("box").style.transform = "rotate("+ Math.floor(Math.random() * 359) + "deg)";
+        });
+
+    
+
+        
+
+    </script>
+    <section>
+        <div id="puzzle">
+        <div class="row">
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+        </div>
+        <div class="row">
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+        </div>
+        <div class="row">
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+        </div>
+        <div class="row">
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+        </div>
+        <div class="row">
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+            <div class="case"></div>
+        </div>
+        </div>
     </section>
 </body>
 </html>
