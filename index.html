@@ -8,8 +8,22 @@
     <title>Index</title>
 </head>
 <body>
+    <div id="center">
     <header>
-        <nav>
+        <div id="title"></div>
+        <div id="line2">
+        <div id="boy"></div>
+        </div>
+        <div id="line3">
+        <div id="hang"></div>
+        <div id="oxo"></div>
+        <div id="marel"></div>
+        </div>
+        <div id="line4">
+        <a href="#title_catch" id="game1"></a>
+        <a href="#all" id="game2"></a>
+        </div>
+        <!--<nav>
             <div class="mov">
                 <a href="index.html" target="_self" class="boxti">
                 <div id="box1" class="box"></div></a>
@@ -35,10 +49,10 @@
                 <div id="box1" class="box"></div></a>
                 <a href="page4.html" target="_self" class="navti">PAGE 4</a>
             </div>
-        </nav>
+        </nav>-->
     </header>
-    <section>
-        <h1>CATCH THE FLY</h1>
+    <section id="catch">
+        <div id="title_catch"></div>
         <div id="area">
             <div id="box" >
            <img src="fly.png" id="fly">
@@ -52,8 +66,12 @@
             document.getElementById("box").style.left = Math.floor(Math.random() * 100) + 1 + "%";
             document.getElementById("box").style.transform = "rotate("+ Math.floor(Math.random() * 359) + "deg)";
         });
+        document.getElementById("box").addEventListener("click", () => {
+            document.getElementById("fly").src = "splat.png";
+        });
     </script>
     <section id="all">
+        <div id="title_puzzle"></div>
         <div id="puzzle">
         <div class="row">
             <div class="case" id="C1-1" style="transform: rotate(0deg);"><canvas id="1-1"></canvas></div>
@@ -96,5 +114,6 @@
         document.getElementById("C1-1").style.transform = "rotate("+ deg +"deg)";
         });
     </script>
+    </div>
 </body>
 </html>
