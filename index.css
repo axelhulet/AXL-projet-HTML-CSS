@@ -343,6 +343,8 @@ nav{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   width: 200px;
   height: 113px;
   background-image: url(puzzle.png);
@@ -353,6 +355,8 @@ nav{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -361,7 +365,9 @@ nav{
       -ms-flex-pack: center;
           justify-content: center;
   width: auto;
-  height: 300px;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .row {
@@ -372,13 +378,12 @@ nav{
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 200px;
-  height: 50px;
+  width: 400px;
+  height: 100px;
 }
 
 .case {
-  width: 50px;
-  height: 50px;
-  background-color: cadetblue;
+  width: 100px;
+  height: 100px;
 }
 /*# sourceMappingURL=index.css.map */
