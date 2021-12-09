@@ -67,8 +67,9 @@
             document.getElementById("box").style.transform = "rotate("+ Math.floor(Math.random() * 359) + "deg)";
         });
         document.getElementById("box").addEventListener("click", () => {
-            document.getElementById("fly").src = "splat.png";
+        document.getElementById("fly").src = "splat.png";
         });
+
     </script>
     <section id="all">
         <div id="title_puzzle"></div>
@@ -117,26 +118,20 @@
             };
         
         var a = document.querySelectorAll(".case");
-        var i;
-        
-
-        /*if (a[i].getAttribute("style") == "transform: rotate(360deg);") {
-                alert("c'est gagné");
-        } else {*/
-                
+      
           
             for (let i = 0; i < a.length; i++) {
-
+                
+                
                 a[i].addEventListener("click", () => {
-                var elem = a[i].getAttribute("style").replace(/[^\d.-]/g, '');
-                var deg = parseInt(elem)+90;
-               a[i].style.transform = "rotate("+ deg +"deg)";
+
+                        var elem = a[i].getAttribute("style").replace(/[^\d.-]/g, '');
+                        var deg = parseInt(elem)+90;
+                        a[i].style.transform = "rotate("+ deg +"deg)";
+                    
+
                 });
-            if (a[i].style.transform === "rotate(360deg)"){
-                    alert("c gagné");
-                }
             }
-        /*}*/
 
   
     </script>
